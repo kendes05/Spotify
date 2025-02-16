@@ -1,17 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const SongItem = () => {
+const SongItem = ({image, name, duration, artist, audio, id, index}) => {
   return (
-    <Link to="/song/1" className='song-item'>
+    <Link to={`/song/${id}`} className='song-item'>
         <div className='song-item__number-album'>
-            <p>1</p>
+            <p>{index+1}</p>
             <div className="song-item__album">
-                <img className='song-item__image'src="https://i.scdn.co/image/ab67616d00001e022774b00531d558bc19e12a24" alt="" />
-                <p className='song-item__name'>Música</p>
+                <img className='song-item__image'src={image} alt="" />
+                <p className='song-item__name'>{name}</p>
             </div>
         </div>
-        <p>2:30</p>
+        <p>{duration}</p>
     </Link>
   )
 }
