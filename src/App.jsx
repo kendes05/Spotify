@@ -15,8 +15,8 @@ function App(nome) {
       <Header></Header>
       <Routes>
         <Route path="/" element={<Home/>}></Route>
-        <Route path="/artists" element={<Artist/>}></Route>
-        <Route path="/artist/:id" element={<Artists/>}></Route>
+        <Route path="/artists" element={<Artists/>}></Route>
+        <Route path="/artist/:id" element={<Artist/>}></Route>
         <Route path="/songs" element={<Songs/>}></Route>
         <Route path="/song/:id" element={<Song/>}></Route>
       </Routes>
